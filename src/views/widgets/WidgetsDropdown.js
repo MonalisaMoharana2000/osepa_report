@@ -511,9 +511,10 @@ const Dashboard = (props) => {
   }, [stDate, NdDate])
 
   const districts = [
+    { label: 'Puri', value: 'puri' },
     { label: 'Khordha', value: 'khordha' },
     { label: 'Cuttack', value: 'cuttack' },
-    { label: 'Puri', value: 'puri' },
+
     { label: 'Balasore', value: 'balasore' },
     { label: 'Ganjam', value: 'ganjam' },
   ]
@@ -528,7 +529,7 @@ const Dashboard = (props) => {
       { label: 'Niali', value: 'niali' },
     ],
     puri: [
-      { label: 'Krushnaprasad', value: 'krushnaprasad' },
+      { label: 'Nimapara', value: 'nimapara' },
       { label: 'Satyabadi', value: 'satyabadi' },
     ],
     balasore: [
@@ -542,6 +543,53 @@ const Dashboard = (props) => {
   }
 
   const clustersData = {
+    nimapara: [
+      { label: 'CHHANIJANGA NODAL UPS', value: 'chhanijangaNodalUps' },
+      { label: 'PABITRA GOVT. HIGH SCHOOL , MANIJANG', value: 'pabitraGovtHighSchoolManijang' },
+      { label: 'BHATABANDHA NODAL UPS', value: 'bhatabandhaNodalUps' },
+      { label: 'AMARANG UGUPS', value: 'amarangUgups' },
+      { label: 'TULASIPUR PS', value: 'tulasipurPs' },
+      { label: 'BAMANAL PS', value: 'bamanalPs' },
+      { label: 'GOPINATHPATNA PS', value: 'gopinathpatnaPs' },
+      { label: 'KADUA', value: 'kadua' },
+      { label: 'KETAKIPATNA', value: 'ketakipatna' },
+      { label: 'SUKAL', value: 'sukal' },
+      { label: 'NUA SOMESWARPUR', value: 'nuaSomeswarpur' },
+      { label: 'BISWANATHAPUR', value: 'biswanathapur' },
+      { label: 'SUANLO', value: 'suanlo' },
+      { label: 'BALIHUDA', value: 'balihuda' },
+      { label: 'SRI RAMACHANDRAPUR', value: 'sriRamachandrapur' },
+      { label: 'MITEIPUR PROJECT UPS', value: 'miteipurProjectUps' },
+      { label: 'DHALESWAR UG UPS', value: 'dhaleswarUgUps' },
+      { label: 'SAILO NODAL UPS', value: 'sailoNodalUps' },
+      { label: 'BAPUJI NODAL UPS, NAGABASTA', value: 'bapujiNodalUpsNagabasta' },
+      { label: 'NILAKANTHESWAR MP HS, DIGHALO', value: 'nilakantheswarMpHsDighalo' },
+      { label: 'BHADARO PS', value: 'bhadaroPs' },
+      { label: 'OILIKANA UG UPS', value: 'oilikanaUgUps' },
+      { label: 'KOTHAKUSANGA PS', value: 'kothakusangaPs' },
+      { label: 'SEVAKSAHI', value: 'sevaksahi' },
+      { label: 'BAINSIBADI', value: 'bainsibadi' },
+      { label: 'PURUNABUDHAKERA', value: 'purunabudhakera' },
+      { label: 'BALANGA GOVT. UPS', value: 'balangaGovtUps' },
+      { label: 'BHANAPUR UGUPS', value: 'bhanapurUgups' },
+      { label: 'BHAGABATIPUR NODAL UPS', value: 'bhagabatipurNodalUps' },
+      { label: 'BISHNUPUR NODAL UPS', value: 'bishnupurNodalUps' },
+      { label: 'ODAGUAN PROJECT UPS', value: 'odaguanProjectUps' },
+      { label: 'PANCHAYAT UPS, UCHHUPUR', value: 'panchayatUpsUchhupur' },
+      { label: 'RENCH SASAN PS', value: 'renchSasanPs' },
+    ],
+    satyabadi: [
+      { label: 'KADUA', value: 'kadua' },
+      { label: 'KETAKIPATNA', value: 'ketakipatna' },
+      { label: 'SUKAL', value: 'sukal' },
+      { label: 'NUA SOMESWARPUR', value: 'nuaSomeswarpur' },
+      { label: 'BISWANATHAPUR', value: 'biswanathapur' },
+      { label: 'SUANLO', value: 'suanlo' },
+      { label: 'BALIHUDA', value: 'balihuda' },
+      { label: 'SRI RAMACHANDRAPUR', value: 'sriRamachandrapur' },
+      { label: 'SEVAKSAHI', value: 'sevaksahi' },
+      { label: 'BAINSIBADI', value: 'bainsibadi' },
+    ],
     bhubaneswar: [
       { label: 'BBSR Cluster 1', value: 'bbsrCluster1' },
       { label: 'BBSR Cluster 2', value: 'bbsrCluster2' },
@@ -556,6 +604,65 @@ const Dashboard = (props) => {
   }
 
   const schoolsData = {
+    kadua: [
+      { label: 'AHAMADPUR PUPS', value: 'ahamadpurPups' },
+      { label: 'BADAKANJIA PS', value: 'badakanjiaPs' },
+    ],
+    ketakipatna: [
+      { label: 'ALANDAPADA PS', value: 'alandapadaPs' },
+      { label: 'BADATOTA PS', value: 'badatotaPs' },
+      { label: 'BAGALPUR PUPS', value: 'bagalpurPups' },
+    ],
+    sukal: [
+      { label: 'ALISH PS', value: 'alishPs' },
+      { label: 'ALISHPATNA PPS', value: 'alishpatnaPps' },
+    ],
+    nuaSomeswarpur: [{ label: 'ATHABATIA PS', value: 'athabatiaPs' }],
+    biswanathapur: [
+      { label: 'ATHAISH PS', value: 'athaishPs' },
+      { label: 'BADAHAT PS', value: 'badahatPs' },
+    ],
+    suanlo: [
+      { label: 'BADABASANTA PS', value: 'badabasantaPs' },
+      { label: 'BADHEIKERA PS', value: 'badheikeraPs' },
+    ],
+    balihuda: [{ label: 'BADABHIMADASPUR PPS', value: 'badabhimadaspurPps' }],
+    sriRamachandrapur: [{ label: 'BADABILASAHI PS', value: 'badabilasahiPs' }],
+    sevaksahi: [{ label: 'BAGULAPARI PPS', value: 'bagulapariPps' }],
+    bainsibadi: [
+      { label: 'BAINSIBADI PS', value: 'bainsibadiPs' },
+      { label: 'BAISHNAVASAHI PPS', value: 'baishnavasahiPps' },
+    ],
+    chhanijangaNodalUps: [{ label: 'ASHAPURANA PS', value: 'ashapuranaPs' }],
+    miteipurProjectUps: [{ label: 'ANDHOTI PROJECT PS', value: 'andhotiProjectPs' }],
+    dhaleswarUgUps: [{ label: 'ANGARAPADA PROJECT PS', value: 'angarapadaProjectPs' }],
+    sailoNodalUps: [{ label: 'ANSALO CPS', value: 'ansaloCps' }],
+    bapujiNodalUpsNagabasta: [{ label: 'ARILO PS', value: 'ariloPs' }],
+    nilakantheswarMpHsDighalo: [{ label: 'ARISANDHA CPS', value: 'arisandhaCps' }],
+    bhadaroPs: [{ label: 'ASHRAM SCHOOL, GARHITAPOKHARI', value: 'ashramSchoolGarhitapokhari' }],
+    oilikanaUgUps: [{ label: 'BADAMACHHAPUR PROJECT UPS', value: 'badamachhapurProjectUps' }],
+    kothakusangaPs: [{ label: 'BAKU PS', value: 'bakuPs' }],
+    pabitraGovtHighSchoolManijang: [{ label: 'ALANDA HARIZAN PS', value: 'alandaHarizanPs' }],
+    bhatabandhaNodalUps: [{ label: 'ALIPINGAL PROJECT UPS', value: 'alipingalProjectUps' }],
+    amarangUgups: [{ label: 'AMARANGA UGUPS', value: 'amarangaUgups' }],
+    tulasipurPs: [{ label: 'AMARESWAR GOVT. HIGH SCHOOL', value: 'amareswarGovtHighSchool' }],
+    bamanalPs: [{ label: 'AMBILIHANA PS', value: 'ambilihanaPs' }],
+    chhanijangaNodalUps: [
+      { label: 'AMPORA PS', value: 'amporaPs' },
+      { label: 'ANANTABASUDEV UPS', value: 'anantabasudevUps' },
+    ],
+    gopinathpatnaPs: [
+      { label: 'AMUNIAPATANA PROJECT PS', value: 'amuniapatanaProjectPs' },
+      { label: 'ANDHIASAHI PS', value: 'andhiasahiPs' },
+    ],
+    kadua: [{ label: 'AHAMADPUR PUPS', value: 'ahamadpurPups' }],
+    ketakipatna: [{ label: 'ALANDAPADA PS', value: 'alandapadaPs' }],
+    sukal: [
+      { label: 'ALISH PS', value: 'alishPs' },
+      { label: 'ALISHPATNA PPS', value: 'alishpatnaPps' },
+    ],
+    nuaSomeswarpur: [{ label: 'ATHABATIA PS', value: 'athabatiaPs' }],
+    biswanathapur: [{ label: 'ATHAISH PS', value: 'athaishPs' }],
     bbsrCluster1: [
       { label: 'BBSR School 1', value: 'bbsrSchool1' },
       { label: 'BBSR School 2', value: 'bbsrSchool2' },

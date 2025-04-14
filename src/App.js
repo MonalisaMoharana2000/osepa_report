@@ -19,18 +19,17 @@ const App = () => {
   const storedTheme = useSelector((state) => state.theme)
 
   useEffect(() => {
+    setColorMode('light') // 👈 Force light mode
+
+    // Optional: remove any theme in the URL
     const urlParams = new URLSearchParams(window.location.href.split('?')[1])
-    const theme = urlParams.get('theme') && urlParams.get('theme').match(/^[A-Za-z0-9\s]+/)[0]
+    const theme = urlParams.get('theme')
     if (theme) {
-      setColorMode(theme)
+      urlParams.delete('theme')
+      window.history.replaceState(null, '', window.location.pathname)
     }
-
-    if (isColorModeSet()) {
-      return
-    }
-
-    setColorMode(storedTheme)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <HashRouter>
