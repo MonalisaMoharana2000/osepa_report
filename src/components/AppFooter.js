@@ -15,7 +15,7 @@ const AppFooter = () => {
           Thinkzone
         </a>
       </div>
-      <div className="text-muted small">Built with ❤️ by Thinkzone</div>
+      <div className="text-muted small">Engineered by Thinkzone Developers</div>
     </CFooter>
   )
 }
