@@ -36,7 +36,7 @@ const AppHeader = () => {
             className="mb-0 fw-bold text-primary-emphasis"
             style={{ fontSize: '1.6rem', letterSpacing: '1px' }}
           >
-            WA-GA SUMMER REPORT
+            SUMMER LEARNING PROGRAM
           </h4>
         </div>
 
